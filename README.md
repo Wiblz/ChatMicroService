@@ -37,8 +37,8 @@ The response should have this structure:
         "customerId": 6,
         "time": "2013-11-05T02:16:35",
         "fromServiceProvider": true,
-        "messegeBody": "Hello, my dear crew, sorry for everything(9(99((("
-    },
+        "messegeBody": "Hello, I can do any dirty job for 5$, no more and no less"
+    }, 
     {
         "id": 199801,
         "serviceId": 17,
