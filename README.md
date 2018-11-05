@@ -4,7 +4,7 @@
 ## Build & Run
 
 #### Build and Run
-You can build and run the application use :
+You can build and run the application using:
 ```
 ./mvnw spring-boot:run 
 ```
@@ -31,7 +31,7 @@ GET http://localhost:8000/dialog/aquire/service/{servise_id}/customer/{customer_
 ```
 POST http://localhost:8000/dialog/dialog/save
 ```
-The request body should have this structure
+##### The request body should have this structure:
 ```
 {
 	"serviceId" :  "666",
