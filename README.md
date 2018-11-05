@@ -45,7 +45,7 @@ The response should have this structure:
         "customerId": 6,
         "time": "2015-11-05T02:17:00",
         "fromServiceProvider": false,
-        "messegeBody": "Can you help me to clean my dirty cat, I`ve tried almost everything"
+        "messegeBody": "Can you help me to wash my dirty kitten, I`ve tried almost everything"
     }
 ]
 ```
