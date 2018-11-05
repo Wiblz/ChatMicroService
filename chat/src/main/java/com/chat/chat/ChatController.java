@@ -26,10 +26,8 @@ public class ChatController {
 	  @GetMapping("/dialog/aquire/service/{servise_id}/customer/{customer_id}")
 	  public List<Messege>  retrieveMesseges
 	    (@PathVariable Long servise_id, @PathVariable Long customer_id){
-		  		  
-		  messegeRepository.save(new Messege(1488L,666L,"Hello, my dear crew, sorry for everything(9(99(((",true));		  
-		  List<Messege> messeges = messegeRepository.findByServiceIdAndCustomerId(servise_id, customer_id);
-  
+		  		    
+	    List<Messege> messeges = messegeRepository.findByServiceIdAndCustomerId(servise_id, customer_id);
 	    return messeges;
 	  }	 
 	  
