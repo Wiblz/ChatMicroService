@@ -63,7 +63,7 @@ The request body should have this structure:
     "fromServiceProvider" : "false"
 }
 ```
-fromServiceProvider means that messege was sent from service owner, if true, and vice versa otherwise. 
+```fromServiceProvider``` means that messege was sent from service owner, if true, and vice versa otherwise. 
 
 #### To get all messeges:
 ```
