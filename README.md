@@ -32,7 +32,7 @@ The response should have this structure:
 ```
 [  
    {
-        "id": 199802,
+        "id": 1998,
         "serviceId": 18,
         "customerId": 6,
         "time": "2013-11-05T02:16:35",
@@ -40,7 +40,7 @@ The response should have this structure:
         "messegeBody": "Hello, I can do any dirty job for 5$, no more and no less"
     }, 
     {
-        "id": 199801,
+        "id": 19980,
         "serviceId": 17,
         "customerId": 6,
         "time": "2015-11-05T02:17:00",
@@ -57,8 +57,8 @@ POST http://localhost:8000/dialog/dialog/save
 The request body should have this structure:
 ```
 {
-    "serviceId" :  "666",
-    "customerId" : "777",
+    "serviceId" :  "1997",
+    "customerId" : "1112",
     "messegeBody" : "Hello, I would like to clean my shoes, mister. Do you still provide this service?",
     "fromServiceProvider" : "false"
 }
