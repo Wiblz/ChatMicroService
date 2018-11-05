@@ -52,7 +52,7 @@ The response should have this structure:
 
 #### To save chat messege:
 ```
-POST http://localhost:8000/dialog/dialog/save
+POST http://localhost:8000/dialog/save
 ```
 The request body should have this structure:
 ```
