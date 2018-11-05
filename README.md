@@ -3,6 +3,7 @@
 
 ## Build & Run
 
+#### Build and Run
 You can build and run the application use :
 ```
 ./mvnw spring-boot:run 
@@ -16,7 +17,7 @@ Or you can build the JAR file with:
 #### Run
 Then you can run the JAR file:
 ```
-java -jar target/gs-accessing-data-mysql-0.1.0.jar
+java -jar target/<Name of the jar file>.jar
 ```
 
 
