@@ -27,8 +27,8 @@ public class ChatController {
 	  public List<Messege>  retrieveMesseges
 	    (@PathVariable Long servise_id, @PathVariable Long customer_id){
 		  		    
-	    List<Messege> messeges = messegeRepository.findByServiceIdAndCustomerId(servise_id, customer_id);
-	    return messeges;
+		    List<Messege> messeges = messegeRepository.findByServiceIdAndCustomerId(servise_id, customer_id);
+		    return messeges;
 	  }	 
 	  
 	  @PostMapping("/dialog/save")
@@ -42,9 +42,7 @@ public class ChatController {
 	  
 	  @GetMapping("/dialog/aquire/all")
 	  public List<Messege> retrieveAllMesseges(){
-		  		  	  
-		  List<Messege> messeges = (List<Messege>) messegeRepository.findAll();
-  
-	    return messeges;
+		    List<Messege> messeges = (List<Messege>) messegeRepository.findAll();
+		    return messeges;
 	  }	 
 }
