@@ -35,7 +35,7 @@ The response should have this structure:
         "id": 1998,
         "serviceId": 18,
         "customerId": 6,
-        "time": "2013-11-05T02:16:35",
+        "time": "1998-06-18T10:40:35",
         "fromServiceProvider": true,
         "messegeBody": "Hello, I can do any dirty job for 5$, no more and no less"
     }, 
