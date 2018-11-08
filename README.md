@@ -87,7 +87,7 @@ The request body should have this structure:
 {
     "serviceId" :  "1997",
     "customerId" : "1112",
-    "messegeBody" : "This individual does her job perfectly)0))00",
+    "commentBody" : "This individual does her job perfectly)0))00",
     "rating" : "1.487999"
 }
 ```
