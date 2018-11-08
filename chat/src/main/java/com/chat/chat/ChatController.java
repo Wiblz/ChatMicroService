@@ -21,6 +21,9 @@ public class ChatController {
 	  private Environment environment;
 	  
 	  @Autowired
+	  private CommentRepository commentRepository;
+	  
+	  @Autowired
 	  private MessegeRepository messegeRepository;
 	  
 	  @GetMapping("/dialog/aquire/service/{servise_id}/customer/{customer_id}")
@@ -45,4 +48,28 @@ public class ChatController {
 		    List<Messege> messeges = (List<Messege>) messegeRepository.findAll();
 		    return messeges;
 	  }	 
+	  
+	  @GetMapping("/comments/aquire/service/{servise_id}/customer/{customer_id}")
+	  public List<Comment> retrieveComment(@PathVariable Long servise_id, @PathVariable Long customer_id)
+	  {
+		    List<Comment> comments = commentRepository.findByServiceIdAndCustomerId(servise_id, customer_id);
+		    return comments;
+	  }	 
+	  
+	  @PostMapping("/comments/save")
+	  public ResponseEntity<Object> createStudent(@RequestBody Comment comment){
+		comment.setTime(LocalDateTime.now());
+		Comment savedComment = commentRepository.save(comment);
+	  	URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+	  			.buildAndExpand(savedComment.getId()).toUri();
+	  	return ResponseEntity.created(location).build();
+	  }
+	  
+	  @GetMapping("/comments/aquire/all")
+	  public List<Comment> retrieveAllComments()
+	  {
+		    List<Comment> comments = (List<Comment>) commentRepository.findAll();
+		    return comments;
+	  }	 
+	  
 }
