@@ -1,6 +1,12 @@
 # ChatMicroService
 
 
+## Prerequisits
+
+- MySQL installed
+- DB named db_chat
+- DB user with name: ```springuser``` and password: ```12345White!``` 
+
 ## Build & Run
 
 #### Build and Run
