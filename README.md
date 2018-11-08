@@ -23,6 +23,8 @@ java -jar target/<Name of the jar file>.jar
 
 ## Using REST service
 
+### Messeges
+
 #### To get chat messeges with specific service id and customer id:
 ```
 GET http://localhost:8000/dialog/aquire/service/{servise_id}/customer/{customer_id}
@@ -69,3 +71,28 @@ The request body should have this structure:
 ```
 GET http://localhost:8000/dialog/aquire/all
 ```
+
+### Comments
+
+#### To get comments with specific service id and customer id:
+```
+GET http://localhost:8000/comments/aquire/service/{servise_id}/customer/{customer_id}
+```
+#### To save comment: 
+```
+POST http://localhost:8000/comments/save
+```
+The request body should have this structure:
+```
+{
+    "serviceId" :  "1997",
+    "customerId" : "1112",
+    "messegeBody" : "This individual does her job perfectly)0))00",
+    "rating" : "1.487999"
+}
+```
+#### To get all comments: 
+```
+GET http://localhost:8000/comments/aquire
+```
+
