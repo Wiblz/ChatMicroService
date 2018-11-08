@@ -93,6 +93,6 @@ The request body should have this structure:
 ```
 #### To get all comments: 
 ```
-GET http://localhost:8000/comments/aquire
+GET http://localhost:8000/comments/aquire/all
 ```
 
