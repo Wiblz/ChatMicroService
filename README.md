@@ -80,9 +80,9 @@ GET http://localhost:8000/dialog/aquire/all
 
 ### Comments
 
-#### To get comments with specific service id and customer id:
+#### To get comments with specific service id 
 ```
-GET http://localhost:8000/comments/aquire/service/{servise_id}/customer/{customer_id}
+GET http://localhost:8000/comments/aquire/service/{servise_id}
 ```
 #### To save comment: 
 ```
