@@ -118,9 +118,9 @@ public class ChatController {
 	  }	 
 	  
 	  @GetMapping("/comments/aquire/service/{service_id}")
-	  public List<Comment> retrieveAllComments(@PathVariable Long servise_id)
+	  public List<Comment> retrieveAllComments(@PathVariable Long service_id)
 	  {
-		    List<Comment> comments = (List<Comment>) commentRepository.findByServiceId(servise_id);
+		    List<Comment> comments = (List<Comment>) commentRepository.findByServiceId(service_id);
 		    return comments;
 	  }	
 }
