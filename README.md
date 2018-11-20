@@ -29,9 +29,9 @@ java -jar target/<Name of the jar file>.jar
 
 ## Using REST service
 
-### Messeges
+### Messages
 
-#### To get chat messeges with specific service id and customer id:
+#### To get chat messages with specific service id and customer id:
 ```
 GET http://localhost:8000/dialog/aquire/service/{servise_id}/customer/{customer_id}
 ```
@@ -58,7 +58,7 @@ The response should have this structure:
 ]
 ```
 
-#### To save chat messege:
+#### To save chat message:
 ```
 POST http://localhost:8000/dialog/save
 ```
@@ -71,9 +71,9 @@ The request body should have this structure:
     "fromServiceProvider" : "false"
 }
 ```
-```fromServiceProvider``` means that messege was sent from service owner, if true, and vice versa otherwise. 
+```fromServiceProvider``` means that message was sent from service owner, if true, and vice versa otherwise. 
 
-#### To get all messeges:
+#### To get all messages:
 ```
 GET http://localhost:8000/dialog/aquire/all
 ```
